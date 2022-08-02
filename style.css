@@ -11,7 +11,7 @@
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
-  --border-input: hsla(210, 9%, 31%, 0.397);
+  --border-input: hsla(210, 9%, 31%, 0.932);
   --submit: rgb(231, 63, 12);
   --submit2: rgb(109, 38, 17);
 
@@ -21,7 +21,7 @@
   font-size: 62.5%;
   --nav-height: 7.2rem;
 
-  --bg-light: hsl(180, 14%, 97%, 1);
+  --bg-light: rgb(184, 188, 250);
   --brand-dark: hsl(var(--hue), 100%, 14%);
 }
 
@@ -495,12 +495,25 @@ body.menu-expanded button path {
 
 /*========================   FORM   ==================================*/
 
+#subscribe{
+  background-color: var(--brand-dark);
+}
+
+#subscribe header h4{
+  color:var(--brand-light);
+}
+
+#subscribe header h2{
+  color:white;
+}
+
 #subscribe .box {
   color: var(--headline);
   display: block;
   position: inherit;
   padding: 1.3rem;
   width: 100%;
+  border: solid 1px var(--border-input);
   border-radius: 2.5rem;
   background-color: var(--brand-light);
   margin-left: 0.5rem;
@@ -514,30 +527,31 @@ fieldset {
 .inputBox {
   position: relative;
 }
-.inputUser {
+.inputUser, 
+textarea {
   background: var(--brand-beige);
   border: solid 1px var(--border-input);
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   outline: none;
   color: black;
   font-size: 1.5rem;
   width: 100%;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 1.7rem 1rem 1.7rem 1rem;
 }
 
-label {
+label, fieldset p {
   color: var(--primary-color);
 }
 
 #submit {
   background-color: var(--submit);
   border: none;
-  border-radius: 3rem;
-  margin:auto;
+  border-radius: 0.7rem;
+  margin: auto;
   margin-bottom: 1rem;
 
   padding: 1.6rem 3.2rem;
-  width:60%;
+  width: 60%;
 
   color: white;
   text-transform: uppercase;
